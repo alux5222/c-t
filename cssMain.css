@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, nav, main, footer {
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+h1{
+    color: #181818;
+}
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main section {
+    padding: 20px;
+    margin: 20px 0;
+    height: 400px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+#home {
+    background-image: url('img/pinkcase.png');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Change text color for better contrast with background */
+}
+
+.backgroundHead{
+    background-image: url('img/headerback.png');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Change text color for better contrast with background */
+}
+
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
