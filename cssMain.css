@@ -11,15 +11,11 @@ header, nav, main, footer {
     text-align: center;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-}
 h1{
     color: #181818;
 }
 nav {
-    background-color: #444;
+    background-color: #5a5a5a;
 }
 
 nav ul {
@@ -54,6 +50,16 @@ main section {
     color: #fff;
 }
 
+.backgroundHead{
+    background-image: url('img/headerback.png');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Change text color for better contrast with background */
+    height: 170px;
+    min-height: 100px;
+}
+
+/* Home / Shop section  */
 #home {
     background-image: url('img/pinkcase.png');
     background-size: cover;
@@ -61,11 +67,137 @@ main section {
     color: white; /* Change text color for better contrast with background */
 }
 
-.backgroundHead{
-    background-image: url('img/headerback.png');
+.shop {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #00d3e2;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #181818;
+}
+
+/* Contact sevtion */
+.contact-section {
+    background-color: #cfcfcf;
+    padding: 50px 0;
+}
+.contact-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 60%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.contact-form button {
+    padding: 15px 30px;
+    background-color: #249835;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: #ff2e00;
+}
+
+/* AboutUs section */
+
+.about-section {
+    background: linear-gradient(45deg, #a0cf69, #b6b6b6);
+    padding: 20px 0;
+    text-align: center;
+}
+/* .about-container {
+    width: 80%;
+    margin: 0 auto;
+} */
+.about-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #004db8;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.about-text {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #030308;
+}
+
+/* Footer section */
+.footer {
+    background-image: url('img/footerback.jpg');
     background-size: cover;
     background-position: center;
-    color: white; /* Change text color for better contrast with background */
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    height: 130px;
+    bottom: 0;
+}
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+}
+.footer-logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+.footer-links li{
+    display: inline;
+    margin: 0 15px;
+}
+.footer-links a {
+    color: #272727;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-links a:hover {
+    color: #b0ff61;
+}
+.footer-social {
+    margin-top: 20px;
+}
+.footer-social a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+.footer-social a:hover {
+    color: #b0ff61;
+}
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #282828;
 }
 
 @media (max-width: 700px) {
@@ -77,10 +209,37 @@ main section {
     }
 
     nav ul li {
+        display: block;
         margin: 10px 0;
     }
+    /* nav ul li {
+        margin: 10px 0;
+    } */
 
     .hamburger {
         display: block;
+    }
+
+    /* about */
+    .about-title {
+        font-size: 1em;
+    }
+    .about-text {
+        font-size: 12pt;
+        padding: 0 20px;
+    }
+    /* footer */
+    .footer-container {
+        width: 85%;
+    }
+    .footer-logo {
+        font-size: 1.2em;
+    }
+    .footer-links li {
+        display: block;
+        margin: 5px 0;
+    }
+    .footer-social a {
+        font-size: 1em;
     }
 }

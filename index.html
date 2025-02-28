@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cssMain.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>C&T</title>
 </head>
 
 <body>
     <header class="backgroundHead">
+        <!-- add logo -->
         <h1>Welcome to C&T</h1>
     </header>
     <nav>
@@ -22,22 +24,54 @@
     </nav>
     <main>
         <section id="home">
-            <a href="shop.html"><h2>Shop</h2></a>
-            <!-- <h2>Store</h2> -->
+            <h2 href="shop.html" class="shop">Shop</h2>
+            <!-- <a ><h2>Shop</h2></a> -->
             <p>This is the home section.</p>
         </section>
-        <section id="contact">
-            <h2>Contact Section</h2>
-            <p>This is the contact section.</p>
+        <section class="contact-section">
+            <div class="contact-container">
+                <h1 class="contact-title">Get in Touch</h1>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="452f8434-fb31-4f17-aaef-100727b5f056">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>        
         </section>
-        <section id="about">
-            <h2>About Section</h2>
-            <p>This is the about section.</p>
+        <section class="about-section">
+            <div class="about-container">
+                <h2 class="about-title">About Us</h2>
+                <p class="about-text">Welcome to our website, your one-stop shop for high-quality cellphone 
+                    accessories! We specialize in offering a wide range of products, including stylish 
+                    cases, durable cable chargers, reliable screen protectors, and more. Our mission is 
+                    to provide you with good quality accessories that not only protects 
+                    your device but also reflect your personal style. We are committed to delivering
+                    great customer service and ensuring you find the perfect accessory to 
+                    meet your needs. Thank you for choosing us as your trusted accessory provider!
+                </p>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2025 My Website</p>
-    </footer>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">C&T Acceessories</div>
+            <ul class="footer-links">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 C&T Warehouse. All Rights Reserved.
+            </div>
+        </div>
+    
     <script type="text/javascript" src="jsMain.js"></script>
 </body>
 </html>
