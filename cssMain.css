@@ -12,7 +12,7 @@ header, nav, main, footer {
 }
 
 h1{
-    color: #ff0000;
+    color: #0004ff;
 }
 nav {
     background-color: #000000;
@@ -35,6 +35,24 @@ nav ul li {
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
 }
 
 main section {
@@ -67,8 +85,8 @@ main section {
     overflow: hidden;
     color: white;
     display: flex;
-    align-items: center;      /* Center vertically */
-    justify-content: center;  /* Center horizontally */
+    align-items: center;      
+    justify-content: center;
     /* padding-left: 45px; */
     z-index: 1;
 }
@@ -256,7 +274,7 @@ main section {
     bottom: 0;
 }
 .footer-container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 .footer-logo {
@@ -286,14 +304,38 @@ main section {
     margin-top: 20px;
 }
 .footer-social a {
-    margin: 0 10px;
-    color: #fff;
-    font-size: 1.5em;
-    transition: color 0.3s ease;
+    display: inline-block;
+    width: 50px;               /* Adjust size as needed */
+    height: 50px;
+    margin: 5px;
+    background-size: cover;    /* Ensures image fills the button */
+    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -9999px;      /* Hides text but keeps it accessible */
+    border-radius: 8px;
+    transition: transform 0.2s ease;
 }
+
 .footer-social a:hover {
-    color: #b0ff61;
+    transform: scale(1.05);    /* Slight zoom on hover */
 }
+
+/* Specific background images */
+.footface {
+    background-image: url('img/face.png');
+}
+
+.footinsta {
+    background-image: url('img/insta.png');
+}
+
+.foottik {
+    background-image: url('img/tik.png');
+}
+
+/* .footer-social a:hover {
+    color: #b0ff61;
+} */
 .footer-bottom {
     margin-top: 20px;
     font-size: 0.9em;
